@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vandy.mooc.view.VideoDetailActivity"
+    android:orientation="vertical" >
+	
+	<ImageView android:id="@+id/thumbnail" 
+	    android:contentDescription="@string/thumbnail_image"
+	    android:background="@color/black_alpha"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="4" />
+	
+	<LinearLayout android:orientation="horizontal"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content">
+	    <Button android:id="@+id/btn_download"
+	        	android:text="@string/download"
+	       		android:onClick="downloadVideo"
+	       		android:layout_weight="1"
+	       		android:layout_width="0dp"
+	       		android:layout_height="wrap_content" />
+	    <Button android:id="@+id/btn_play"
+	        	android:text="@string/play"
+	        	android:onClick="playVideo"
+	        	android:layout_weight="1" 
+	        	android:layout_width="0dp"
+	       		android:layout_height="wrap_content" />
+	</LinearLayout>
+	
+	<TextView android:id="@+id/title"
+	    android:layout_margin="@dimen/activity_horizontal_margin"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" />
+	
+	<RatingBar android:id="@+id/rank"
+	    android:layout_margin="@dimen/activity_horizontal_margin"
+	    android:numStars="5"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="4" />
+    
+    
+    
+
+</LinearLayout>
